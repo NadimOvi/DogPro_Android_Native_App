@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_homebar"/>
+    <item
+        android:id="@+id/history"
+        android:title="History"
+        android:icon="@drawable/ic_historybar"
+        />
+    <item
+        android:id="@+id/holder"
+        android:title=""
+        />
+    <item
+        android:id="@+id/list"
+        android:title="Breeds"
+
+        android:icon="@drawable/ic_listbar"/>
+    <!--<item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_profilebar"
+        />-->
+    <item
+        android:id="@+id/filter"
+        android:title="Filter"
+        android:icon="@drawable/ic_baseline_filter_list_24"
+        />
+</menu>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:id="@+id/layout"
+    android:visibility="invisible"
+    app:cardCornerRadius="10dp"
+    >
+   <!-- <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/profile_pic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/breed_name"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+
+                        android:text=""
+                        android:textColor="@color/textColorGreen"
+                        android:fontFamily="@font/poppinsbold"
+                        />
+                    <TextView
+                        android:id="@+id/menu_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="&#8942;"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/breedDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:padding="10dp">
+                    <TextView
+                        android:id="@+id/returnTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Return"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/showTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Show"
+                        android:layout_weight="1"
+                        android:textColor="@color/greenTextColor"
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+    </LinearLayout>-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/profile_pic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/breed_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text=""
+            android:textColor="@color/textColorGreen"
+            app:layout_constraintStart_toEndOf="@+id/profile_pic"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/menu_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="&#8942;"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/breedDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Would you like more information about each breed?
+just tap on one of the breed names given below"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profile_pic"
+            app:layout_constraintTop_toBottomOf="@+id/breed_name" />
+
+        <TextView
+            android:id="@+id/returnTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:padding="5dp"
+            android:text="Return"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/breedDescription" />
+
+        <TextView
+            android:id="@+id/showTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Show"
+            android:textColor="@color/greenTextColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/returnTxt"
+            app:layout_constraintTop_toBottomOf="@+id/breedDescription"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

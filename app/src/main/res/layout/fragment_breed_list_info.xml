@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15282E"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.BreedListInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linear12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical">
+            <Toolbar
+                android:id="@+id/toolbarId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lexenddeca"
+                    android:gravity="center"
+                    android:text="DogPro"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </Toolbar>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textColorGreen"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear12">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="50dp">
+
+                <TextView
+                    android:id="@+id/getBreedHistoryText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Brief History"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/getText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="There are three defined types of breeds of dog; Pure, Mixed and Designer. The attributes exhibited by any breed both physical as well as temperament depend upon its ancestry. Learn about where the dog breed originated and developed into its current form in this section."
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/getBreedHistoryText" />
+
+                <ImageButton
+                    android:id="@+id/getBreedHistoryList"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="43dp"
+                    android:background="@drawable/learn_dog_image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/getText" />
+
+                <TextView
+                    android:id="@+id/getPhysicalText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Dog Physics"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_margin="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/getBreedHistoryList"/>
+
+                <TextView
+                    android:id="@+id/getSecontText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="To understand the well being of the dog, it is important to be aware of its physical attributes. The breed's life expectancy, ideal height, ideal weight determines the overall health of the dog. Learn about the breed’s ideal health attributes in this section."
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/getPhysicalText"/>
+
+                <ImageButton
+                    android:id="@+id/getPhysicalAttributesList"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="43dp"
+                    android:background="@drawable/learn_dog_physical_image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/getSecontText"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            android:layout_marginBottom="90dp">
+            <Button
+                android:id="@+id/shareButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/textColorGreen"
+                android:fontFamily="@font/poppinsregular"
+                android:gravity="center"
+                android:text="Identify Dog Breed "
+                android:textAllCaps="false"
+
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:layout_margin="15dp" />
+        </RelativeLayout>-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

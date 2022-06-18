@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="ring"
+            android:thicknessRatio="20"
+            android:innerRadiusRatio="2.5"
+            android:useLevel="false">
+            <size android:width= "300dp"
+                android:height= "300dp"/>
+            <stroke android:dashGap="20dp" />
+            <solid android:color= "#D6D6DA"/>
+        </shape>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <rotate android:fromDegrees="270"
+            android:toDegrees="270">
+            <shape android:shape="ring"
+                android:thicknessRatio="20"
+                android:useLevel="true">
+                <size android:height="300dp"
+                    android:width="300dp"/>
+
+                <!--<gradient
+                    android:centerColor="#d4aa00"
+                    android:endColor= "#00aa00"
+                    android:startColor="#ff5555"
+                    android:type="sweep"/>-->
+                <solid android:color= "#323277"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>
+
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/gradientDrawble"> // Give id
+        &lt;!&ndash;<shape android:shape="rectangle">
+            <solid android:color="#000000" /> // CHANGE THIS COLOR
+        </shape>&ndash;&gt;
+        <shape android:shape="ring"
+            android:thicknessRatio="16"
+            android:useLevel="false">
+            <size android:width= "300dp"
+                android:height= "300dp"/>
+            <solid android:color= "#DDD"/>
+        </shape>
+    </item>
+    <item android:left="0dp">
+        <rotate android:fromDegrees="270"
+            android:toDegrees="270">
+            <shape android:shape="ring"
+                android:thicknessRatio="16"
+                android:useLevel="false">
+                <size android:height="300dp"
+                    android:width="300dp"/>
+                <gradient
+                    android:centerColor="#d4aa00"
+                    android:endColor= "#00aa00"
+                    android:startColor="#ff5555"
+                    android:type="sweep"/>
+            </shape>
+        </rotate>
+        <shape android:shape="ring">
+            <solid android:color="@color/textColorGreen" />
+        </shape>
+    </item>
+
+
+</layer-list>-->

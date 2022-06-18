@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15282E"
+    tools:context=".Fragments.CameraInfoFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:id="@+id/linear12"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           android:orientation="vertical">
+           <Toolbar
+               android:id="@+id/toolbarId"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:fontFamily="@font/lexenddeca"
+                   android:gravity="center"
+                   android:text="Instructions for identification"
+                   android:textColor="@color/white"
+                   android:textSize="16dp"
+                   android:textStyle="bold" />
+           </Toolbar>
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="@color/textColorGreen"/>
+
+       </LinearLayout>
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/linear12">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_margin="15dp">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Beed Identification is a feature in this app that you can use to know the breed of your dog. This identification process is performed based on an image of your dog you upload or take an image with your phone’s camera. For now, we can identify 130 dog breeds with significant accuracy. It is obvious that sometimes the breed might not be correctly identified as this is completely based on the visual feature of your dog.  "
+                   android:textColor="@color/white"
+                   android:textSize="16dp"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="To utilize the full potential of our identification algorithm we recommend you to take the picture of your dog in certain set of criteria. "
+                   android:textColor="@color/white"
+                   android:layout_marginTop="10dp"
+                   android:textSize="16dp"/>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="20dp"
+                   android:gravity="center">
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="200dp"
+                       android:background="@drawable/picture1"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="10dp"
+                       android:text="Use your camera or upload\nyour own photo from\nthe gallery"
+                       android:textColor="@color/greentext"
+                       android:textAlignment="center"
+                       android:layout_marginTop="10dp"
+                       android:textSize="16dp"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_gravity="center"
+                   android:gravity="center">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="10dp"
+                       android:text="Within a few seconds\nthe app determines\nthe dog breed"
+                       android:textColor="@color/greentext"
+                       android:textAlignment="center"
+                       android:layout_marginTop="10dp"
+                       android:textSize="16dp"/>
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="200dp"
+                       android:background="@drawable/picture2"/>
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_gravity="center"
+                   android:gravity="center">
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="200dp"
+                       android:background="@drawable/picture3"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="10dp"
+                       android:textAlignment="center"
+                       android:text="App will tell you which\nbreed have been\nmixed"
+                       android:textColor="@color/greentext"
+                       android:layout_marginTop="10dp"
+                       android:textSize="16dp"/>
+               </LinearLayout>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:paddingBottom="100dp"
+                   android:layout_marginBottom="100dp"/>
+
+           </LinearLayout>
+
+       </ScrollView>
+
+       <!--<RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+
+           android:layout_marginBottom="90dp">
+           <Button
+               android:id="@+id/shareButton"
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:backgroundTint="@color/textColorGreen"
+               android:fontFamily="@font/poppinsregular"
+               android:gravity="center"
+               android:text="Identify Dog Breed "
+               android:textAllCaps="false"
+
+               android:textColor="@color/white"
+               android:textSize="14dp"
+               android:layout_margin="15dp" />
+       </RelativeLayout>-->
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

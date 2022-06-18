@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15282E"
+    tools:context=".Fragments.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:id="@+id/linear1"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           android:gravity="center"
+           android:orientation="vertical"
+           app:layout_constraintTop_toTopOf="parent">
+           <ImageView
+               android:id="@+id/splashImage1"
+               android:layout_width="200dp"
+               android:layout_height="200dp"
+               android:layout_gravity="center"
+               android:layout_marginBottom="10dp"
+               android:background="@drawable/scanner_image" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70dp"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sign in with Google"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppinsbold"
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/google_logo"
+                    android:paddingLeft="10dp"
+                    android:textSize="12sp"
+                    android:drawablePadding="10dp"
+                    />
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sign in with Gmail"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppinsbold"
+                    android:backgroundTint="@color/colorRed"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:drawableLeft="@drawable/ic_gmail_logo"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    />
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sign in with Phone"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppinsbold"
+                    android:backgroundTint="@color/colorGreen"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:drawableLeft="@drawable/ic_phone_logo"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    />
+
+            </LinearLayout>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:gravity="bottom"
+           android:layout_marginBottom="100dp"
+           app:layout_constraintTop_toBottomOf="@+id/linear1">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="By continuing, you are indicating that you accept our"
+               android:textColor="@color/white"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:fontFamily="@font/poppinsregular"/>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Terms of Service "
+                   android:textColor="@color/colorGreen"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:fontFamily="@font/poppinsregular"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="and "
+                   android:textColor="@color/white"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:fontFamily="@font/poppinsregular"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Privacy Policy"
+                   android:textColor="@color/colorGreen"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:fontFamily="@font/poppinsregular"/>
+           </LinearLayout>
+
+       </LinearLayout>
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

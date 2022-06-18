@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#15282E"
+    tools:context=".Fragments.BreedFilterInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linear12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical">
+            <Toolbar
+                android:id="@+id/toolbarId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lexenddeca"
+                    android:gravity="center"
+                    android:text="Instructions for Filter Search"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </Toolbar>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textColorGreen"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear12">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This feature of our app allows you to search for breeds based on your preferred criteria. For now, you can find the breeds based on different sets of parameters. These parameters include Ideal Height, Ideal Weight ranges including Temperaments and Utilization.\n\nYou can apply all the search queries at a time or leave any of them empty. The more parameters you set the more rigorous the search becomes.  If this feature doesn’t help to find your desired dog then you can see the full list of the dogs and learn about each of them in the Full List fragment of the app. "
+                    android:textColor="@color/white"
+                    android:layout_margin="10dp"
+                    android:textSize="15dp"/>
+                <Button
+                    android:id="@+id/filterButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="Check Dog Filter"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/textColorGreen"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            android:layout_marginBottom="90dp">
+            <Button
+                android:id="@+id/shareButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/textColorGreen"
+                android:fontFamily="@font/poppinsregular"
+                android:gravity="center"
+                android:text="Identify Dog Breed "
+                android:textAllCaps="false"
+
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:layout_margin="15dp" />
+        </RelativeLayout>-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

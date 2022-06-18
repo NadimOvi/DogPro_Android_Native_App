@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "133233619812",
+    "project_id": "genofax-1936c",
+    "storage_bucket": "genofax-1936c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133233619812:android:2ba700f43e2be7ded98071",
+        "android_client_info": {
+          "package_name": "com.teleaus.bioscience"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133233619812-83p6p6q5p7ibtmdk00b5g29juc16srum.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teleaus.bioscience",
+            "certificate_hash": "a4840365896b14ce540e67eaff4a01d9b8281379"
+          }
+        },
+        {
+          "client_id": "133233619812-jfr2da9ge88g9nu89u05gu4civlathnb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teleaus.bioscience",
+            "certificate_hash": "fe38e1da4234bb83f31cb827759f758098a82493"
+          }
+        },
+        {
+          "client_id": "133233619812-h24npf5n0ln69ov3f4v4036gjhhav120.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm_AGjpSMuwMDewk9FJ28cp2rPw1VgU5Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133233619812-h24npf5n0ln69ov3f4v4036gjhhav120.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
